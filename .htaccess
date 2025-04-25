@@ -1,0 +1,8 @@
+# General
+RewriteEngine On
+RewriteBase /
+Options All -Indexes
+Options +FollowSymLinks
+
+# Rewrite file
+RewriteRule ^dms/device/heartbeat$ heartbeat.php [L]
