@@ -1,0 +1,47 @@
+pre:has(code#XML) {
+  min-height:80vh;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+.form-signin .form-floating:focus-within {z-index: 2;}
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+}
+.code-editor {
+ display: none;
+ position: relative;
+ font-family: monospace;
+ line-height: 1.5;
+}
+.code-editor textarea {
+	color: #f1f1f1;
+  background: #2d2d2d;
+  color: transparent;
+  caret-color: #90EE90;
+  caret-shape: underscore;
+  padding: 10px;
+  margin: 0px;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  width: 100%;
+  border: none;
+  height:3em;
+  resize: none;
+}
+.code-editor textarea:focus {outline:none;}
+.code-editor pre {
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit; 
+  background: transparent;
+}
