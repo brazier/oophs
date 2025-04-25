@@ -12,9 +12,9 @@ Using:
 > [!TIP]
 > It is adviseable to keep the DNS record pointing to your server after you are done, since there is nothing stopping others from running code on your device if they get access to the domain.
 ## How to use:
-1. Setup a local DNS(e.g. PiHole) and point services.openpeak.net to your servers local IP-address, and add your DNS IP-adsress to you DHCP server.
+1. Setup a local DNS(e.g. PiHole) and point services.openpeak.net to your servers local IP-address, and add your DNS IP-address to you DHCP server.
 2. Install Apache with mod_rewrite and mod_ssl.
-   > SSL might not be needed as others have reported uisng standard HTTP on port 443 instead, and others have been able to use a standard SSL config
+   > SSL might not be needed as others have reported uisng standard HTTP on port 443 instead, and others have been able to use a standard SSL config.
    > There exists different devices running different software from different vendors. This is what was needed on mine running software from _"Telio"_
    ```
    sudo apt install apache2 libapache2-mod-php8.2 openssl
@@ -33,8 +33,10 @@ Using:
    SSLCertificateKeyFile   /etc/ssl/localcerts/apache.key
    ```
 5. Change ssl.conf to make it accept old ciphers/protocols ([source](https://ssl-config.mozilla.org/#server=apache&version=2.4.60&config=old&openssl=3.4.0&hsts=false&ocsp=false&guideline=5.7))
-   > [!CAUTION]
-   > This is not adviseable and could pose a security risk on a production server
+   
+> [!CAUTION]
+> This is not adviseable and could pose a security risk on a production server
+   
     ```
     SSLProtocol             -all +TLSv1 +TLSv1.1 +TLSv1.2 +TLSv1.3
     SSLOpenSSLConfCmd       Curves X25519:prime256v1:secp384r1
@@ -42,8 +44,8 @@ Using:
     SSLHonorCipherOrder     on
     SSLSessionTickets       off
     ```
-6. Download files to document root of your server and make a folder named 'devicefiles' and make sure the server has write and read permissions to that folder.
-7. Go to services.openpeak.net and enter the mac address of the device:
+7. Download files to document root of your server and make a folder named 'devicefiles' and make sure the server has write and read permissions to that folder.
+8. Go to services.openpeak.net and enter the mac address of the device:
    
    ![bilde](https://github.com/user-attachments/assets/5bf26504-e6ad-43ab-9de8-db15fe64a1f4)
    
