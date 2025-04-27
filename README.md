@@ -1,5 +1,5 @@
 # OPEN OpenPeak Heartbeat Server
-A simple implementation to talk to OpenPeak devices. The code might be messy, but it works.
+A simple implementation to talk to OpenPeak OpenFrame devices. The code might be messy, but it works.
 Thanks to everyone over at [jogglerwiki.com](https://www.jogglerwiki.com/forum/)
 
 Using:
